@@ -44,5 +44,7 @@ Commons Attribution 4.0 International License (CC-BY-4.0), available at http://c
 
 To start the fabric network with two organizations along with the NestJs API, run the following command.
 
+```bash
 cd bat-rest-api/
 ./restart.sh
+```
