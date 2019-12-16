@@ -1,0 +1,32 @@
+version: '2.1'
+
+services:
+  api.bat:
+    container_name: api.bat
+    ports:
+      - '3006:3000'
+    environment:
+      - AUTH0_CLIENT_SECRET=secretKey
+      - AUTH0_CLIENT_ID=38786600015-e5bl9815l7um826slsnl91dohmh5l332.apps.googleusercontent.com
+    volumes:
+      - './src:/src'
+      - '../first-network/connection-org1.json:/src/first-network/connection-org1.json'
+    build:
+        context: ./
+        dockerfile: ./Dockerfile
+    depends_on:
+      - mongodb.bat
+      
+
+  mongodb.bat:
+    container_name: mongodb.bat
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data:/data/db
+    
+networks:
+  default:
+    external:
+      name: net_byfn

@@ -1,0 +1,36 @@
+
+# dependencies
+/node_modules
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+
+# mongodb
+/data
+
+# misc
+npm-debug.log
+
+# tests
+/test
+/coverage
+/.nyc_output
+
+# dist
+/dist
+
+test-reports/
+
+.env
+.DS_Store
+.idea
+
+vendor
+.idea
+
+src/common/config/creds/*
+coverage
+yarn-error.log
+yarn.lock
