@@ -50,7 +50,7 @@
     "fabric-network": "^1.4.4",
     "flat": "^4.1.0",
     "grpc": "^1.24.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwks-rsa": "^1.2.1",
     "jwt-decode": "^2.2.0",
     "mongoose": "^5.6.8",
